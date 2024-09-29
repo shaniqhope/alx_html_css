@@ -1,0 +1,65 @@
+/* Previous styling from the hero, header, and "What we do..." and "Our Results" section */
+
+/* Contact Us Section */
+.contact-us {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-us label {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-us button {
+    background-color: #FF6565;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.contact-us button:hover {
+    opacity: 0.9;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    .contact-us form {
+        width: 100%;
+    }
+
+    .contact-us input,
+    .contact-us textarea,
+    .contact-us button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

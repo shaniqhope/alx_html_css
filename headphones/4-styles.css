@@ -1,0 +1,55 @@
+/* Previous styling from hero, header, "What we do", "Our Results", and "Contact Us" */
+
+/* Footer Section */
+footer {
+    background-color: #0A192F;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .social-links img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+}

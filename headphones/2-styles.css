@@ -1,0 +1,62 @@
+/* Previous styling from the hero and what we do sections */
+
+/* Our Results Section */
+.our-results {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.our-results h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.our-results p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.result-box {
+    width: 200px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.result-box .result-icon {
+    margin-bottom: 1rem;
+}
+
+.result-box h3 {
+    font-size: 2rem;
+    color: #FF6565;
+    margin-bottom: 0.5rem;
+}
+
+.result-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    .results-container {
+        flex-direction: column;
+    }
+
+    .result-box {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}

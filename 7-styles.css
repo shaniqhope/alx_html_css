@@ -1,0 +1,132 @@
+/* Previous styles here */
+
+/* What we do Section */
+.what-we-do {
+    padding: 4rem 0;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-box {
+    width: 150px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+    cursor: pointer;
+}
+
+/* Animation: scale and opacity on hover */
+.service-box:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #FF6565;
+}
+
+/* Our Results Section */
+.our-results {
+    padding: 4rem 0;
+    background-color: #0A192F;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.result-box {
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation: bouncing effect on hover */
+.result-box:hover {
+    transform: translateY(-10px);
+}
+
+.result-box h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #FF6565;
+}
+
+.result-box p {
+    font-size: 1rem;
+    color: #EEE;
+}
+
+.pentagon {
+    width: 100px;
+    height: 100px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Pentagon rotation effect on hover */
+.result-box:hover .pentagon {
+    transform: rotate(360deg);
+}
+
+/* Footer */
+footer {
+    background-color: #0A192F;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    .services-container, .results-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        margin-bottom: 2rem;
+    }
+
+    .pentagon {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+}
