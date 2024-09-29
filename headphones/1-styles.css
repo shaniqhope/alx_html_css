@@ -1,0 +1,64 @@
+/* Previous styling from the hero and header */
+
+/* What we do Section */
+.what-we-do {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.what-we-do h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.what-we-do p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-box {
+    width: 200px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.icon-box span {
+    font-size: 3rem;
+    color: #FF6565;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.icon-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    .icons-container {
+        flex-direction: column;
+    }
+
+    .icon-box {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
