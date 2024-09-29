@@ -1,73 +1,116 @@
-/* Previous styles here */
-
-/* What we do Section */
-.what-we-do {
-    padding: 4rem 0;
-    background-color: #F5F5F5;
-    text-align: center;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.services-container {
+/* Fonts */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.header {
     display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0A192F;
 }
 
-.service-box {
-    width: 150px;
+.header .logo img {
+    height: 40px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s ease-in-out, opacity 0.3s;
-    cursor: pointer;
+    flex-direction: column;
 }
 
-/* Animation: scale and opacity on hover */
-.service-box:hover {
-    transform: scale(1.1);
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero .cta-btn {
+    background-color: #FF6565;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.hero .cta-btn:hover {
     opacity: 0.9;
 }
 
-.icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #FF6565;
+/* What We Do Section */
+.what-we-do {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.what-we-do h2 {
+    margin-bottom: 50px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service .icon img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
 }
 
 /* Our Results Section */
 .our-results {
-    padding: 4rem 0;
     background-color: #0A192F;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
+    padding: 50px 0;
 }
 
-.results-container {
+.our-results h2 {
+    margin-bottom: 50px;
+}
+
+.results {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.result-box {
-    width: 150px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Animation: bouncing effect on hover */
-.result-box:hover {
-    transform: translateY(-10px);
-}
-
-.result-box h3 {
-    margin: 1rem 0;
-    font-size: 2rem;
-    color: #FF6565;
-}
-
-.result-box p {
-    font-size: 1rem;
-    color: #EEE;
+    justify-content: space-around;
 }
 
 .pentagon {
@@ -75,58 +118,67 @@
     height: 100px;
     background-color: #FF6565;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    display: inline-block;
-    margin-bottom: 1rem;
-    transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* Pentagon rotation effect on hover */
-.result-box:hover .pentagon {
-    transform: rotate(360deg);
+.pentagon p {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
-/* Footer */
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    background-color: #FF6565;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Section */
 footer {
     background-color: #0A192F;
+    padding: 50px;
     color: white;
-    padding: 2rem 0;
     text-align: center;
 }
 
-.footer-logo img {
-    width: 100px;
-    margin-bottom: 1rem;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer p {
-    color: rgba(255, 255, 255, 0.7);
+.footer-content .logo-footer img {
+    width: 50px;
 }
 
-/* Mobile View Adjustments */
-@media (max-width: 480px) {
-    .services-container, .results-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-box {
-        margin-bottom: 2rem;
-    }
-
-    .pentagon {
-        width: 80px;
-        height: 80px;
-    }
-
-    footer {
-        padding: 1.5rem 0;
-    }
-
-    .footer-logo img {
-        width: 80px;
-    }
-
-    footer p {
-        font-size: 0.875rem;
-    }
+.footer-icons {
+    display: flex;
+    gap: 20px;
 }
+
+.footer-icons img {
+    width: 25px;
+}
+
