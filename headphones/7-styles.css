@@ -8,6 +8,7 @@
 /* Fonts */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
 }
 
 /* Header */
@@ -71,6 +72,7 @@ body {
 .what-we-do {
     text-align: center;
     padding: 50px 0;
+    background-color: white;
 }
 
 .what-we-do h2 {
@@ -133,6 +135,7 @@ body {
 .contact {
     text-align: center;
     padding: 50px 0;
+    background-color: white;
 }
 
 .contact-form {
@@ -181,4 +184,40 @@ footer {
 .footer-icons img {
     width: 25px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .services, .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .services, .results {
+        flex-direction: column;
+    }
+}
+
 
